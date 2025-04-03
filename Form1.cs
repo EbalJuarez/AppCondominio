@@ -34,5 +34,13 @@ namespace AppCondominio
             registroPropiedad.Show();
             
         }
+
+        private void buttonConsulta_Click(object sender, EventArgs e)
+        {
+            Consultas consultas = new Consultas();
+            this.Hide();
+            consultas.Show();
+            
+        }
     }
 }

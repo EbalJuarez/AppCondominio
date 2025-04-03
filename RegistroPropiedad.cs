@@ -50,6 +50,7 @@ namespace AppCondominio
             propiedad.Dpi = int.Parse(comboBoxDPI.SelectedItem.ToString());
             Lista_Propiedades.Add(propiedad);
             Guardados.GuardarPropiedad("../../Registro_Propiedad", Lista_Propiedades);
+            clear();
         }
 
         private void RegistroPropiedad_Load(object sender, EventArgs e)

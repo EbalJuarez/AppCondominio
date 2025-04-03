@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Consultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas.Designer.cs">
+      <DependentUpon>Consultas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,9 @@
       <DependentUpon>RegistroPropietario.cs</DependentUpon>
     </Compile>
     <Compile Include="Reporte.cs" />
+    <EmbeddedResource Include="Consultas.resx">
+      <DependentUpon>Consultas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
