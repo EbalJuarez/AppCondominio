@@ -45,7 +45,7 @@ namespace AppCondominio
 
         private void RegistroPropietario_Load(object sender, EventArgs e)
         {
-
+            Lista_Propietarios = Guardados.LeerPropietario("../../Registro_Propietarios");
         }
     }
 }

@@ -55,6 +55,7 @@ namespace AppCondominio
         private void RegistroPropiedad_Load(object sender, EventArgs e)
         {
             clear();
+            Lista_Propiedades = Guardados.LeerPropiedad("../../Registro_Propiedad");
             Rellenar_Combox();
         }
     }
