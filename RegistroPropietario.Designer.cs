@@ -85,6 +85,7 @@
             // textBoxDPI
             // 
             this.textBoxDPI.Location = new System.Drawing.Point(256, 187);
+            this.textBoxDPI.MaxLength = 18;
             this.textBoxDPI.Name = "textBoxDPI";
             this.textBoxDPI.Size = new System.Drawing.Size(174, 20);
             this.textBoxDPI.TabIndex = 5;

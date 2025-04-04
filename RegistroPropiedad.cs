@@ -23,14 +23,13 @@ namespace AppCondominio
         }
 
         private void Rellenar_Combox() {
+            Lista_Propietarios = Guardados.LeerPropietario("../../Registro_Propietarios");
             foreach (var propiedad in Lista_Propietarios) {
                 comboBoxDPI.Items.Add(propiedad.Dpi);
             }
         }
 
-        private void Rellenar_Lista() {
-            Lista_Propietarios = Guardados.LeerPropietario("../../Registro_Propietarios");
-        }
+        
 
         private void clear() {
             textBoxCuota.Text = string.Empty;
@@ -56,7 +55,6 @@ namespace AppCondominio
         private void RegistroPropiedad_Load(object sender, EventArgs e)
         {
             clear();
-            Rellenar_Lista();
             Rellenar_Combox();
         }
     }

@@ -86,6 +86,7 @@
             // textBoxCuota
             // 
             this.textBoxCuota.Location = new System.Drawing.Point(316, 164);
+            this.textBoxCuota.MaxLength = 10;
             this.textBoxCuota.Name = "textBoxCuota";
             this.textBoxCuota.Size = new System.Drawing.Size(158, 20);
             this.textBoxCuota.TabIndex = 5;
