@@ -12,8 +12,7 @@ namespace AppCondominio
 {
     public partial class RegistroPropiedad : Form
     {
-        Propiedad propiedad = new Propiedad();
-        Propietario Propietario = new Propietario();
+        
         List<Propietario> Lista_Propietarios = new List<Propietario>();
         List<Propiedad> Lista_Propiedades = new List<Propiedad>();
         Guardados Guardados = new Guardados();
@@ -44,6 +43,7 @@ namespace AppCondominio
 
         private void buttonRegistrar_Click(object sender, EventArgs e)
         {
+            Propiedad propiedad = new Propiedad();
             propiedad.Cuota = float.Parse(textBoxCuota.Text);
             propiedad.NoCasa = int.Parse(textBoxNoCasa.Text);
             propiedad.Dpi = int.Parse(comboBoxDPI.SelectedItem.ToString());

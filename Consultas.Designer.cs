@@ -49,7 +49,7 @@
             this.comboBoxOrden.Items.AddRange(new object[] {
             "Por cuota (Ascendente)",
             "Por cuota (Descendente)",
-            "Cuotas mas Altas/Bajas ",
+            "3 mas altas y bajas",
             "Cuota mas alta"});
             this.comboBoxOrden.Location = new System.Drawing.Point(362, 45);
             this.comboBoxOrden.Name = "comboBoxOrden";

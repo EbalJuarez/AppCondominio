@@ -13,7 +13,7 @@ namespace AppCondominio
     public partial class RegistroPropietario : Form
     {
         List<Propietario> Lista_Propietarios = new List<Propietario>();
-        Propietario propietario = new Propietario();
+        
         Guardados Guardados = new Guardados();
         public RegistroPropietario()
         {
@@ -35,6 +35,7 @@ namespace AppCondominio
 
         private void buttonRegistrar_Click(object sender, EventArgs e)
         {
+            Propietario propietario = new Propietario();
             propietario.Nombre = textBoxNombre.Text;
             propietario.Apellido = textBoxApellido.Text;
             propietario.Dpi = int.Parse(textBoxDPI.Text);
